@@ -10,7 +10,7 @@ const SetupPage = async() => {
             members: {
                 some: {
                     profileId: (profile as { id: string }).id || ""
-                    // profileId: profile?.id || ""
+                    //! profileId: profile?.id || "" (if error comes there might be some issue here)
                 }
             }
         }
